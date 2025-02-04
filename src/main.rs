@@ -1,3 +1,5 @@
+#![windows_subsystem = "windows"]
+
 use std::error::Error;
 use std::fs;
 use std::path::PathBuf;
