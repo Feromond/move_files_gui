@@ -2,6 +2,16 @@
 name = "move_files_gui"
 version = "0.1.0"
 edition = "2021"
+authors = ["Jacob Mish <JacobPMish@gmail.com>"]
+description = "Simple GUI to move specific file types from within a folder (nested even) into another destination"
+license = "MIT"
+
+[[bin]]
+name = "Move_Files"
+path = "src/main.rs"
+
+[build-dependencies]
+winresource = "0.1.17"
 
 [dependencies]
 eframe = "0.30.0"
@@ -12,3 +22,9 @@ walkdir = "2.5.0"
 [dependencies.winapi]
 version = "0.3.9"
 features = ["winuser", "windef"]
+
+[package.metadata.bundle]
+name = "Move Files"
+identifier = "io.github.Feromond.move_files_gui"
+description = "Simple GUI to move specific file types from within a folder (nested even) into another destination"
+icon = ["./icon.png"]
